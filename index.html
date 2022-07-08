@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-</head>
-<style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;300&family=Inconsolata:wght@200&family=Splash&display=swap" rel="stylesheet">
+    <style>
    *{
          -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
-         box-sizing: border-box;
+         box-sizing: border-boxs;
          }
          body{
-            font-family:sans-serif;
-            background-color: aliceblue;
+            font-family: 'Arima', cursive;
+            background-color: #F0EBE3;
         }
         .container{
           padding-top: 15px;
@@ -57,17 +59,45 @@
             margin-left: 20px;
             
          }
+         @media(max-width:767px){
+            header nav .container ul li{
+                 display: block;
+                 margin-top: 40px;
+            }
+         }
          header nav .container ul li a{
             text-decoration: none;
-            background-color: #fff;
+            background-color: #576F72;
             padding:15px;
             border-radius:20px;
             cursor: pointer;
-            color: black;
+            color: #E4DCCF;
          }
          main{
             padding-left: 30px;
          }
+         main .cards{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           flex-basis:60px;
+
+        }
+        main .cards .card{
+          margin: 20px auto;
+          width: 400px;
+          text-align: center;
+          color:#E4DCCF;
+          background-color: #576F72;
+        }
+         main .cards .card img{
+            width: 400px;    
+            transition: 0.5s;      
+        }
+        main .cards .card img:hover{
+            filter: grayscale(100%);
+
+        }
          main p{
             line-height: 1.5;
             font-size: 20px;
@@ -90,6 +120,7 @@
          }
          footer .container .content ul li a i{
             font-size: 30px;
+            color:#576F72;
          }
          footer .container .content .text span{
             color: rgb(159, 171, 182);
@@ -97,7 +128,7 @@
          
          footer .container .content .phone i{
             font-size: 30px;
-            color: rgb(97, 35, 155);
+            color: #576F72;
          }
         
 </style>
@@ -105,7 +136,7 @@
     <header>
         <nav>
             <div class="container">
-                <img src="./images/HR.jfif" alt="">
+                <img src="./assets/HR.jfif" alt="">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -116,7 +147,9 @@
         </nav>
     </header>
     <main id="main" >
-      
+      <div class="cards">
+ 
+      </div>
 
     </main>
     <footer>
